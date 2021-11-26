@@ -1,11 +1,13 @@
+import React from "react";
 import classes from "./CartModal.module.css";
 
 const CartModal = (props) => {
   return (
-    <div className={classes.modalBackdrop} onClick={props.closeCart}>
+    <React.Fragment>
+    <div className={classes.modalBackdrop} onClick={props.closeCart}></div>
       <div className={classes.modal}>{props.children}</div>
       <button onClick={props.closeCart}>X</button>
-    </div>
+      </React.Fragment>
   );
 };
 

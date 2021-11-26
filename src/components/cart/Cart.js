@@ -31,12 +31,14 @@ const Cart = (props) => {
     </ul>
   );
 
-  return (<div>
-      <CartModal 
-      closeCart={props.closeCart}
-      {...cartItems}
-      />
-  </div>);
+  console.log(cartItems)
+
+
+  return (
+    <div>
+      <CartModal closeCart={props.closeCart}>{cartItems}</CartModal>
+    </div>
+  );
 };
 
 export default Cart;
