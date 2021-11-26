@@ -1,0 +1,30 @@
+.card {
+  width: 14rem;
+  height: 20rem;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 14px;
+  text-align: center;
+}
+
+.card img {
+  width: 10rem;
+  height: 10rem;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid rgb(218, 206, 206);
+}
+
+.card h3 {
+
+  font-weight: bold;
+  font-size: 1rem;
+  text-justify: inter-word;
+  height: 3rem;
+  overflow: hidden;
+}
+
+.card h4 {
+  text-align: left;
+  color: rgb(77, 77, 77);
+  padding-bottom: 1rem;
+}

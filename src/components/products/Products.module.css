@@ -1,0 +1,11 @@
+.productContainer {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.productGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4rem;
+}

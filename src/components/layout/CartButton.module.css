@@ -1,0 +1,13 @@
+
+.button {
+    background: url('../../assets/shopping-cart-solid.svg');
+    height: 2rem;
+    width: 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+
+.badge {
+    
+}

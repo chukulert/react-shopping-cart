@@ -1,0 +1,10 @@
+.modalBackdrop{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.modal{
+    position: sticky;
+    height: 100vh;
+    width: 20rem;
+}
