@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import CartContext from "../../store/CartContext";
 
 import CartItem from "./CartItem";
@@ -15,28 +15,30 @@ const Cart = (props) => {
     cartCtx.removeItem(id);
   };
 
+  const clearCartHandler = () => {
+    cartCtx.clearItems()
+  }
+
   const cartItems = (
     <ul>
       {cartCtx.items.map((item) => (
         <CartItem
           key={item.id}
+          id={item.id}
           title={item.title}
           price={item.price}
           amount={item.amount}
           image={item.image}
-          onAdd={cartItemAddHandler.bind(null, item)}
-          onRemove={cartItemRemoveHandler.bind(null, item.id)}
+          onAdd={cartItemAddHandler}
+          onRemove={cartItemRemoveHandler}
         />
       ))}
     </ul>
   );
 
-  console.log(cartItems)
-
-
   return (
     <div>
-      <CartModal closeCart={props.closeCart}>{cartItems}</CartModal>
+      <CartModal closeCart={props.closeCart} clearCart={clearCartHandler}>{cartItems}</CartModal>
     </div>
   );
 };

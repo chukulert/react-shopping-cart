@@ -1,6 +1,6 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import ProductItem from "./ProductItem";
-
+import LoadingSpinner from '../UI/LoadingSpinner'
 import classes from "./Products.module.css";
 
 const Products = () => {
@@ -9,6 +9,7 @@ const Products = () => {
 
   useEffect(() => {
     const fetchProducts = async () => {
+      setIsLoading(true);
       const response = await fetch("https://fakestoreapi.com/products");
 
       if (!response.ok) {
@@ -16,7 +17,6 @@ const Products = () => {
       }
 
       const data = await response.json();
-      console.log(data);
       const productArray = [];
       data.forEach((product) => {
         productArray.push({
@@ -52,9 +52,12 @@ const Products = () => {
   ));
 
   return (
-    <div className={classes.productContainer}>
-      <div className={classes.productGrid}>{productItems}</div>
-    </div>
+    <React.Fragment>
+      {isLoading && <LoadingSpinner/>}
+      {!isLoading && <div className={classes.productContainer}>
+        <div className={classes.productGrid}>{productItems}</div>
+      </div>}
+    </React.Fragment>
   );
 };
 

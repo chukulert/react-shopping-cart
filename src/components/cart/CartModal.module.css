@@ -10,7 +10,7 @@
 
 .modal{
     position: fixed;
-    top: 15vh;
+    top: 8vh;
     left: 5%;
     width: 90%;
     background-color: white;
@@ -21,12 +21,57 @@
     animation: slide-down 300ms ease-out forwards;
 }
 
+.modal h2 {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.modalContent {
+  overflow-y: auto;
+  max-height: 70vh; 
+}
+
+.modalBtn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modalBtn button {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #2A4D14;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.modalBtn button:hover {
+  background-color: #AFF9C9;
+  color: black;
+}
+
+.closeModalBtn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  padding: 0.5rem;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
 @media (min-width: 768px) {
     .modal {
-      width: 40rem;
-      left: calc(50% - 20rem);
+      width: 50rem;
+      left: calc(50% - 25rem);
     }
-  }
+}
   
   @keyframes slide-down {
     from {

@@ -1,9 +1,8 @@
 .item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid grey;
-    padding: 1rem 0;
+    border-bottom: 2px solid #d6d4d4;
+    padding: 1rem 4rem;
     margin: 1rem 0;
 }
 
@@ -12,22 +11,56 @@
     height: 5rem;
 }
 
+.itemContent {
+    padding: 0 2rem;
+    width: 15rem;
+    height: 5rem;
+    overflow: hidden;
+    text-align: left;
+    font-size: 0.8rem;
+    text-align: left;
+    text-justify: inter-word;
+}
+
+.itemContentAction {
+    display: flex;
+    width: 20rem;
+    justify-content: space-between;
+}
+
+.itemContentAction h4 {
+    color: red;
+}
+
 .buttons {
-    
+    display: flex;
+}
+
+.buttons p {
+    width: 2rem;
+    height: 2rem;   
+    text-align: center;
+    line-height: 2rem;
+    border: 1px solid #d6d4d4;
 }
 
 .buttons button {
     height: 2rem;
     width: 2rem;
-    padding: 0.5rem;
-    margin: 0 0.5rem;
-    border-radius: 8px;
-    border: 0.5px solid black;
-    background-color: #2A4D14;
-    color: white;
+    border: 1px solid #d6d4d4;
+    cursor: pointer;
 }
 
 .buttons button:hover {
     background-color: #AFF9C9;
     color: black;
-   }
+}
+
+@media (max-width: 900px) {
+    .item {
+        padding: 1rem;
+    }
+}
+
+
+
