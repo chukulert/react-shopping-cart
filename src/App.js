@@ -28,6 +28,9 @@ function App() {
         <Route path="/" exact>
           <Redirect to="/shopping-cart" />
         </Route>
+        <Route path="/react-shopping-cart" exact>
+          <Redirect to="/shopping-cart" />
+        </Route>
         <Route path="/shopping-cart" exact>
           <LandingPage />
         </Route>
