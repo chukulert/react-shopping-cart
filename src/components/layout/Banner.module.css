@@ -1,0 +1,50 @@
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 30vh 0;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../../assets/shopping1.jpg')
+  }
+
+  .banner h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .banner p {
+    font-size: 20px;
+    color: white;
+    opacity: .7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    margin: 1rem;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .banner a {
+      text-decoration: none;
+      background-color: var(--button-light-green);
+      color: black;
+      opacity: 1;
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding: .5rem;
+      border-radius: 8px;  
+      transition: transform 300ms;
+      display: inline-block;
+  }
+
+  .banner a:hover{
+      transform: scale(1.1)
+  }
+
+  .banner a:active {
+      background-color: var(--secondary);
+  }
+
+
+ 

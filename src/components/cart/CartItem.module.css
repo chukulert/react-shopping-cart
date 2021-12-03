@@ -6,6 +6,10 @@
     margin: 1rem 0;
 }
 
+.lastItem {
+    border-bottom: none;
+}
+
 .item img {
     width: 5rem;
     height: 5rem;
@@ -47,13 +51,13 @@
 .buttons button {
     height: 2rem;
     width: 2rem;
+    font-size: 1.1rem;
     border: 1px solid #d6d4d4;
     cursor: pointer;
 }
 
 .buttons button:hover {
-    background-color: #AFF9C9;
-    color: black;
+    font-weight: bold;
 }
 
 @media (max-width: 900px) {

@@ -8,11 +8,11 @@ const NavigationBar = (props) => {
 
   return (
     <header className={classes.header}>
-      <div className={classes.logo}>Great Quotes</div>
+      <div className={classes.logo}>Shopping Cart</div>
       <nav className={classes.nav}>
         <ul>
           <li>
-            <NavLink to="/shopping-cart" activeClassName={classes.active}>
+            <NavLink to="/shopping-cart" exact activeClassName={classes.active}>
               Home
             </NavLink>
           </li>
@@ -22,8 +22,8 @@ const NavigationBar = (props) => {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/shopping-cart/contact" activeClassName={classes.active}>
-              Contact
+            <NavLink to="/shopping-cart/about" activeClassName={classes.active}>
+              About
             </NavLink>
           </li>
           <li>

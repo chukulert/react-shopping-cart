@@ -6,7 +6,7 @@
     padding: 0.5rem;
     font-weight: bold;
     color: white;
-    background-color: #2A4D14;
+    background-color: var(--secondary);
     border-radius: 8px;
     border: none;
     cursor: pointer;
@@ -14,12 +14,12 @@
 }
 
 .btn:hover {
- background-color: #AFF9C9;
+ background-color: var(--button-light-green);
  color: black;
 }
 
 .input {
-    border:1px solid #AFF9C9;
+    border:1px solid var(--button-light-green);
     padding: 0.5rem;
     border-radius: 8px;
     text-align: center;
@@ -27,5 +27,5 @@
 }
 
 .input:focus {
-    border-bottom: 1px solid #2A4D14;
+    border-bottom: 1px solid var(--secondary);
 }

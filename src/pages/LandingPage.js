@@ -1,11 +1,7 @@
-import NavigationBar from "../components/layout/NavigationBar";
+import Banner from "../components/layout/Banner";
 
 const LandingPage = () => {
-    return (
-        <div>
-            Landing Page
-        </div>
-    )
-}
+  return <Banner />;
+};
 
 export default LandingPage;

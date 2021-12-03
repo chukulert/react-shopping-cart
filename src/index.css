@@ -5,6 +5,12 @@
   overflow-wrap: break-word;
 }
 
+:root {
+  --main: #008080;
+  --secondary: #2A4D14;
+  --button-light-green: #AFF9C9;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -17,4 +23,15 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.centered {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 1rem;
+  width: 20rem;
 }

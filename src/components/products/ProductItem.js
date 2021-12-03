@@ -19,19 +19,20 @@ const ProductItem = (props) => {
       title: props.title,
       price: props.price,
       amount: +currentAmount,
-      image: props.image
+      image: props.image,
     });
   };
 
   return (
     <Card>
       <div>
-        <img src={props.image} />
+        <img src={props.image} alt="item product display" />
         <h4>S$ {props.price}</h4>
         <h3>{props.title}</h3>
       </div>
       <form className={classes.form} onSubmit={submitHandler}>
-        <input className={classes.input}
+        <input
+          className={classes.input}
           ref={amountInputRef}
           label="Amount"
           id="amount"

@@ -16,8 +16,8 @@ const Cart = (props) => {
   };
 
   const clearCartHandler = () => {
-    cartCtx.clearItems()
-  }
+    cartCtx.clearItems();
+  };
 
   const cartItems = (
     <ul>
@@ -31,6 +31,7 @@ const Cart = (props) => {
           image={item.image}
           onAdd={cartItemAddHandler}
           onRemove={cartItemRemoveHandler}
+          lastItem={cartCtx.items.at(-1) === item ? true : undefined}
         />
       ))}
     </ul>
@@ -38,7 +39,9 @@ const Cart = (props) => {
 
   return (
     <div>
-      <CartModal closeCart={props.closeCart} clearCart={clearCartHandler}>{cartItems}</CartModal>
+      <CartModal closeCart={props.closeCart} clearCart={clearCartHandler}>
+        {cartItems}
+      </CartModal>
     </div>
   );
 };

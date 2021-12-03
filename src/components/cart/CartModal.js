@@ -5,6 +5,8 @@ import classes from "./CartModal.module.css";
 const CartModal = (props) => {
   const cartCtx = useContext(CartContext);
 
+  const totalAmount = cartCtx.totalAmount.toFixed(2);
+
   let modalContent;
 
   if (cartCtx.items.length) {
@@ -12,8 +14,11 @@ const CartModal = (props) => {
       <div>
         <div className={classes.modalContent}>{props.children}</div>
         <div className={classes.modalBtn}>
-          <button className={classes.checkoutEmptyBtn} onClick={props.clearCart}>Empty Cart</button>
-          <button className={classes.checkoutEmptyBtn}>Checkout</button>
+          <button className={classes.emptyCartBtn} onClick={props.clearCart}>
+            Empty Cart
+          </button>
+          <h2>Total: ${totalAmount}</h2>
+          <button>Checkout</button>
         </div>
       </div>
     );

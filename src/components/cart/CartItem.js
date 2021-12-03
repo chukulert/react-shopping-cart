@@ -18,9 +18,13 @@ const CartItem = (props) => {
     props.onRemove(props.id);
   };
 
+  const itemClasses = `${classes.item} ${
+    props.lastItem ? classes.lastItem : ""
+  }`;
+
   return (
-    <li className={classes.item}>
-      <img src={props.image} />
+    <li className={itemClasses}>
+      <img src={props.image} alt="item product display" />
       <div className={classes.itemContent}>
         <h3>{props.title}</h3>
       </div>
@@ -28,9 +32,9 @@ const CartItem = (props) => {
         <p>S${price}</p>
         <h4>S${totalAmount}</h4>
         <div className={classes.buttons}>
-          <button onClick={addItem}>+</button>
-          <p>{props.amount}</p>
           <button onClick={removeItem}>-</button>
+          <p>{props.amount}</p>
+          <button onClick={addItem}>+</button>
         </div>
       </div>
     </li>

@@ -5,12 +5,13 @@
     padding: 0 10%;
     justify-content: space-between;
     align-items: center;
-    background-color: #008080;
+    background-color: var(--main);
   }
   
   .logo {
     font-size: 2rem;
     color: white;
+    font-weight: bold;
   }
   
   .nav ul {
