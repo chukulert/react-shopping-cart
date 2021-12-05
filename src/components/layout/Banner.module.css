@@ -2,6 +2,7 @@
     background-size: cover;
     background-position: center;
     padding: 40vh 0;
+    max-height: 90vh;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../../assets/shopping1.jpg')
   }
 
