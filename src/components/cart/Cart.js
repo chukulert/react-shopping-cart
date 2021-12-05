@@ -48,8 +48,3 @@ const Cart = (props) => {
 
 export default Cart;
 
-// id: props.id,
-// title: props.title,
-// price: props.price,
-// amount: currentAmount,
-// image: props.image
